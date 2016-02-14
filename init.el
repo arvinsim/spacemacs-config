@@ -240,6 +240,9 @@ values."
 It is called immediately after `dotspacemacs/init'.  You are free to put almost
 any user code here.  The exception is org related code, which should be placed
 in `dotspacemacs/user-config'."
+  ;; This really should be the default
+  (add-to-list 'load-suffixes ".el.gpg")
+  (add-to-load-path "~/.spacemacs.d")
   )
 
 (defun dotspacemacs/user-config ()
