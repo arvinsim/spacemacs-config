@@ -1,9 +1,11 @@
 ;; Show Line Numbers
 (global-linum-mode)
+(setq-default dotspacemacs-line-numbers t)
 
 ;; Set custom TODO keywords
 (setq org-todo-keywords
-      '((sequence "TODO" "IN-PROGRESS" "WAITING" "|" "DONE" "DELEGATED" "DROPPED")))
+      '((sequence "TODO" "IN-PROGRESS" "WAITING"
+                  "|" "DONE" "DELEGATED" "DROPPED")))
 
 ;; Set the default file to capture notes
 (setq org-default-notes-file (expand-file-name "~/Dropbox/org/notes.org"))
