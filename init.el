@@ -28,6 +28,7 @@ values."
      ;; emacs-lisp
      git
      ;; markdown
+     javascript
      org
      python
      (shell :variables
