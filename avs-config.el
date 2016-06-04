@@ -17,4 +17,7 @@
 (setq org-refile-targets
       '((org-agenda-files . (:maxlevel . 6))))
 
+;; Prevent the visual selection overriding my system clipboard
+(fset 'evil-visual-update-x-selection 'ignore)
+
 (provide 'avs-config)
